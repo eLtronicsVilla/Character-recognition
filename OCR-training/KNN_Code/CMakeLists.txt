@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 2.6)
+project(knn)
+find_package(OpenCV REQUIRED)
+add_executable(knn knn_ocr_training.cpp)
+target_link_libraries(knn ${OpenCV_LIBS})
